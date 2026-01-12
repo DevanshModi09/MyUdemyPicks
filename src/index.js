@@ -8,9 +8,11 @@ const CourseList = () => {
   return (
     <main className="container">
       <header className="header">
-        <h1>My Udemy Picks for MERN Stack</h1>
+        <h1>
+          My <span>Udemy</span> Picks
+        </h1>
         <p className="subtitle">
-          A structured roadmap from fundamentals to deployment
+          A structured MERN stack roadmap — from fundamentals to deployment
         </p>
       </header>
 

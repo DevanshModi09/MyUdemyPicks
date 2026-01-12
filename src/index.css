@@ -1,25 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
-  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
-  background: linear-gradient(180deg, #f8fafc, #eef2f7);
-  color: #1f2933;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  background: radial-gradient(circle at top, #f9fbff, #eef2f7);
+  color: #1f2937;
+  line-height: 1.6;
 }
 
-/* PAGE TITLE (optional improvement) */
-h1 {
+/* LAYOUT */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
   text-align: center;
-  margin-top: 3rem;
-  font-size: 2rem;
+  margin-top: 3.5rem;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.25rem;
   font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.subtitle {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #6b7280;
+  max-width: 520px;
+  margin-inline: auto;
 }
 
 /* GRID */
@@ -28,7 +52,7 @@ h1 {
   max-width: 1200px;
   margin: 4rem auto;
   display: grid;
-  gap: 2.5rem;
+  gap: 2.75rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,57 +63,57 @@ h1 {
 
 /* CARD */
 .course {
-  background: #ffffff;
-  border-radius: 1.25rem;
-  padding: 2rem 1.5rem 2.25rem;
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  border-radius: 1.4rem;
+  padding: 2rem 1.75rem 2.4rem;
   text-align: center;
   position: relative;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .course:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
 }
 
 /* IMAGE */
 .course img {
   width: 100%;
-  height: 180px;
+  height: 185px;
   object-fit: cover;
-  border-radius: 0.75rem;
+  border-radius: 0.85rem;
 }
 
 /* TEXT */
 .course h2 {
-  margin-top: 1.25rem;
+  margin-top: 1.4rem;
   font-size: 1.05rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
-.course h4 {
+.course h3 {
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: #6b7280;
 }
 
-.course p {
-  margin-top: 0.4rem;
+.course h4 {
+  margin-top: 0.35rem;
   font-size: 0.85rem;
   font-weight: 600;
   color: #2563eb;
 }
 
-/* SEQUENCE NUMBER */
+/* SEQUENCE BADGE */
 .number {
   position: absolute;
-  top: -12px;
-  left: -12px;
-  width: 42px;
-  height: 42px;
+  top: -14px;
+  left: -14px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   font-size: 0.9rem;
@@ -97,41 +121,36 @@ h1 {
   border-radius: 50%;
   background: linear-gradient(135deg, #ff512f, #dd2476);
   color: #fff;
-  box-shadow: 0 8px 20px rgba(221, 36, 118, 0.35);
-}
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(221, 36, 118, 0.35);
 }
 
-.header {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.subtitle {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #6b7280;
-}
-
+/* FOOTER */
 .footer {
   margin-top: auto;
-  padding: 2rem 0;
+  padding: 2.5rem 1rem;
   text-align: center;
   font-size: 0.85rem;
   color: #6b7280;
 }
-h1 {
+
+.footer p {
+  max-width: 700px;
+  margin: auto;
+}
+.header h1 {
+  font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.8px;
 }
 
-.course h2 {
-  font-weight: 600;
+.header h1 span {
+  color: #2563eb;
 }
 
 .subtitle {
-  font-weight: 400;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+  max-width: 520px;
+  margin-inline: auto;
 }
