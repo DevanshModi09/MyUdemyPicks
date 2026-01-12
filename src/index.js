@@ -1,21 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { courses } from './CoursesDb.js';
-import Course from './course.js';
+import { courses } from './CoursesDb';
+import Course from './course';
 import './index.css';
 
 const CourseList = () => {
   return (
-    <>
-      <h1>My udemy picks for Mern Stack </h1>
+    <main className="container">
+      <header className="header">
+        <h1>My Udemy Picks for MERN Stack</h1>
+        <p className="subtitle">
+          A structured roadmap from fundamentals to deployment
+        </p>
+      </header>
+
       <section className="courselist">
-        {courses.map((course) => {
-          return <Course {...course} key={course.seq}></Course>;
-        })}
+        {courses.map((course) => (
+          <Course key={course.seq} {...course} />
+        ))}
       </section>
-    </>
+      <footer className="footer">
+        <p>
+          Note: These are my personal Udemy course picks for the MERN stack. I
+          recommend following this order for a smooth learning journey, but feel
+          free to adapt it to your own pace and goals.
+        </p>
+      </footer>
+    </main>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<CourseList></CourseList>);
+root.render(<CourseList />);
