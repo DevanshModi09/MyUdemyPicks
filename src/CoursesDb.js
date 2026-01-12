@@ -11,14 +11,14 @@ export const courses = [
   {
     seq: 1,
     img: imgLinux,
-    courseTitle: 'The Linux Command Line Bootcamp: Beginner To Power User',
+    courseTitle: 'The Linux Command Line Bootcamp ',
     courseDuration: 16,
     courseInstructor: 'Colt Steele',
   },
   {
     seq: 2,
     img: imgJS,
-    courseTitle: 'The Complete JavaScript Course 2025: From Zero to Expert!',
+    courseTitle: 'The Complete JavaScript Course',
     courseDuration: 72,
     courseInstructor: 'Jonas Schmedtmann',
   },
@@ -39,7 +39,7 @@ export const courses = [
   {
     seq: 5,
     img: imgSQL,
-    courseTitle: 'The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert',
+    courseTitle: 'The Ultimate MySQL Bootcamp',
     courseDuration: 20,
     courseInstructor: 'Colt Steele',
   },
@@ -60,7 +60,7 @@ export const courses = [
   {
     seq: 8,
     img: imgDocker,
-    courseTitle: 'Docker & Kubernetes: The Practical Guide [2025 Edition]',
+    courseTitle: 'Docker & Kubernetes ',
     courseDuration: 24,
     courseInstructor: 'Maximilian Schwarzmüller',
   },

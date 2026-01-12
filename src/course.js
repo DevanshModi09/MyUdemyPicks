@@ -6,6 +6,7 @@ const Course = (props) => {
       <h2>{courseTitle}</h2>
       <h3>{'By: ' + courseInstructor}</h3>
       <h4>{courseDuration + ' hours'}</h4>
+      <span className="number">{seq}</span>
     </article>
   );
 };

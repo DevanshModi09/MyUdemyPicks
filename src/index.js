@@ -4,15 +4,16 @@ import { courses } from './CoursesDb.js';
 import Course from './course.js';
 import './index.css';
 
-
-
 const CourseList = () => {
   return (
-    <section className="courselist">
-      {courses.map((course) => {
-        return <Course {...course} key={course.seq}></Course>;
-      })}
-    </section>
+    <>
+      <h1>My udemy picks for Mern Stack </h1>
+      <section className="courselist">
+        {courses.map((course) => {
+          return <Course {...course} key={course.seq}></Course>;
+        })}
+      </section>
+    </>
   );
 };
 
